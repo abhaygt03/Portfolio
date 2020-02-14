@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Averia+Serif+Libre&display=swap" rel="stylesheet">
+<style>
+body {
+	color: white;
+	/*background-image:url("https://images.unsplash.com/photo-1505299344687-ee45ad431f9b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");*/
+	background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover;
+  font-family: "Lato", sans-serif;
+  transition: background-color .5s;
+}
+
+#change{
+	margin-top: 0;
+}
+
+.sidenav {
+	font-family: 'Averia Serif Libre', cursive;
+
+	background-image: url("https://images.unsplash.com/photo-1498575207492-cfbed56146c0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");
+	/*background-image: url("/styles/script/mypic.jpg");*/
+	background-position: center; 
+
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+.main-text{
+	font-family: 'Averia Serif Libre', cursive;
+	text-align: center;
+	margin-top: 16%;
+}
+
+
+h1{
+	color: #e82777;
+}
+#myProgress {
+  width: 100%;
+  background-color: transparent;
+}
+
+#myBar {
+  width: 1%;
+  height: 5px;
+  background-color: #c314f2;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+</head>
+<body>
+
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="/about">About</a>
+  <a href="#">Services</a>
+  <a href="#">Clients</a>
+  <a href="#">Contact</a>
+</div>
+
+<div id="main">
+	<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+     
+      <a class="navbar-brand" href="#">Personal Blog</a>
+    </div>
+    <div class="nav navbar-nav navbar-right">
+    	<li><a href="#" style="padding-top:6px;padding-bottom:6px;" onclick="openNav()"><span  class="glyphicon glyphicon-th-large click" style="font-size: 3rem;"></span></a></li>
+    </div>
+  </div>
+</nav>
+</div>
+</div>

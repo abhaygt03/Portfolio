@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Portofolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<style>
+body {
+
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover;
+  font-family: "Lato", sans-serif;
+  transition: background-color .5s;
+}
+
+#change{
+  margin-top: 0;
+}
+
+.sidenav {
+  font-family: 'Averia Serif Libre', cursive;
+    background-color: #45beca;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+  background-color: #e0ebe8;
+  padding-bottom: 0;
+
+
+}
+
+.main-text{
+  font-family: 'Averia Serif Libre', cursive;
+  
+}
+
+
+#myProgress {
+  width: 100%;
+  background-color: transparent;
+}
+
+#myBar {
+  width: 1%;
+  height: 3px;
+  background-color: #45beca;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+</head>
+<body>
+
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="/about">About</a>
+  <a href="/contact">Contact</a>
+  <a href="/">Home</a>
+
+</div>
+
+<div id="main" >
+<!--   <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+     
+      <a class="navbar-brand" href="#">My Portfolio</a>
+    </div>
+    <div class="nav navbar-nav navbar-right">
+      <li><a href="#" style="padding-top:6px;padding-bottom:6px;" onclick="openNav()"><span  class="glyphicon glyphicon-th-large click" style="font-size: 3rem;"></span></a></li>
+    </div>
+  </div>
+</nav> -->
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light" style="width: 97vw">
+  
+    <ul class="navbar-nav mr-auto">
+<li class="nav-item active">
+        
+          <a href="#" style="padding-top:6px;padding-bottom:6px;" onclick="openNav()"><span  class="navbar-toggler-icon click" style="font-size: 2vw;"></span></a>
+        </li>
+
+      <li class="nav-item active">
+      <a class="navbar-brand" href="#" style="font-size: 1.8vw;margin-left: 2vw;">My Portfolio</a>
+        </li>
+      </ul>
+    </nav>
+   <!-- <img src="./styles/script/myAvatar.png" style="width: 75px;height: 75px;border-radius: 50px;"> -->
+<div class="main-text" style="margin-top: 4.5vw;">
+
+<div class="card" style="width: 23vw;display: inline-block;margin-left: 20vw;">
+  <img class="card-img-top" src="./styles/script/pixus.png" style="width: 23vw;height: 15vw;" alt="Card image cap">
+  <div class="card-body">
+ 
+    <h5 class="card-title"><img src="./styles/script/pixuslogo.png" style="border-radius: 20px;width: 5.3vw;"></h5>
+    <p class="card-text" style="font-size: 1.1vw">Pixus is a photo and video-sharing social networking service. It was created by Abhay Gautam, and launched in February 2020. FOr now it is PC compatible, but soon the phone supportive verison will be released.</p>
+    <a href="#" class="btn btn-primary" style="width: 4.6vw;font-size: 1vw">Pixus</a>
+  </div>
+</div>
+
+<div class="card" style="width: 23vw;margin-top: 50px;display: inline-block;margin-left: 10%;">
+  <img class="card-img-top" src="./styles/script/yelpcamp.png" style="width: 23vw;height: 15vw;" alt="Card image cap">
+  <div class="card-body">
+ 
+    <h5 class="card-title"><img src="./styles/script/yelplogo.png" style="border-radius: 20px;width: 5.3vw;"></h5>
+    <p class="card-text" style="font-size: 1.1vw">Pixus is a photo and video-sharing social networking service. It was created by Abhay Gautam, and launched in February 2020. FOr now it is PC compatible, but soon the phone supportive verison will be released.</p>
+    <a href="http://yelpcampjbn.herokuapp.com/" class="btn btn-primary" style="font-size: 1vw;">YelpCamp</a>
+  </div>
+</div>
+</div>
+</div>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+  
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+<script type="text/javascript" src="/styles/script/landing.js"></script>
+   
+</body>
+</html> 
