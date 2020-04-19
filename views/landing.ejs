@@ -10,8 +10,17 @@
 <link href="https://fonts.googleapis.com/css?family=Averia+Serif+Libre&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Caveat&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Baloo+Tamma+2&display=swap" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="/styles/script/socialmedia.css">
 <style>
+	@media (max-width:629px) {
+  img#optionalstuff {
+    display: none;
+  }
+  span#optionalstuff {
+    display: none;
+  }
+}
 body {
 	color: white;
 	/*background-image:url("http://seanhalpin.io/assets/img/content/home/masthead/land.svg");*/
@@ -31,43 +40,6 @@ h3{
 h1{
 	
 	color: #4ab19a;
-}
-.sidenav {
-	font-family: 'Averia Serif Libre', cursive;
-		background-color: #45beca;
-	/*background-image: url("/styles/script/mypic.jpg");*/
-	/*background-position: center; */
-
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
-}
-
-.sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: white;
-  display: block;
-  transition: 0.3s;
-}
-
-.sidenav a:hover {
-  color: #f1f1f1;
-}
-
-.sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
 }
 
 #main {
@@ -91,7 +63,8 @@ h1{
 }
 
 #myProgress {
-  width: 100%;
+	padding-left: 4rem;
+  width: 90%;
   background-color: transparent;
 }
 
@@ -110,15 +83,15 @@ h1{
 <body>
 
 
-<div id="mySidenav" class="sidenav">
+<!-- <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <a href="/about">About</a>
   <a href="/projects">My Projects</a>
   <a href="/contact">Contact</a>
-</div>
+</div> -->
 
 <div id="main">
-	<nav class="navbar navbar-default">
+	<!-- <nav class="navbar navbar-default">
   <div class="container-fluid">
     <div class="navbar-header">
       <a class="navbar-brand" href="#" >My Portfolio</a>
@@ -127,21 +100,35 @@ h1{
     	<li><a href="#" style="padding-top:6px;padding-bottom:6px;" onclick="openNav()"><span  class="glyphicon glyphicon-th-large click" style="font-size: 3rem;"></span></a></li>
     </div>
   </div>
-</nav>
-
-      <img src="https://i.imgur.com/4Wtfr8r.png" style="width: 10rem;height: 10rem;border-radius: 50px;">
+</nav> -->
+<div class="container" style="padding:3rem;">
+<div style="line-height: 3rem;float: right;font-family: 'Baloo Tamma 2', cursive;">
+  <a href="/about" style="font-size: 2rem;color: #151515;text-decoration: none;">About</a>
+  <a href="/projects" style="font-size: 2rem;margin-left: 3.5rem;color: green;text-decoration: none;">Projects</a>
+  <a href="/contact"  style="font-size: 2rem;margin-left: 3.5rem;color: green;text-decoration: none;">Contact</a>
+</div>
+</div>
+<div class="container">
+      <img src="https://i.imgur.com/4Wtfr8r.png" style="width: 10rem;height: 10rem;border-radius: 50px;float: left;">
+</div>
 <div class="main-text container">
-
-  <h1 style="font-size: 7.5rem;margin-bottom: 30px;font-weight: 500;font-family: 'Caveat', cursive;">I'm <span class="my-name">Abhay .</span></h1>
+	<img src="/styles/script/cld.PNG" id="optionalstuff" style="margin:0;width: 20rem;max-height: 8rem;float: right;">
+	<div class="container" style="max-width: 80rem;">
+  <h1 style="font-size: 7.5rem;margin-bottom: 30px;font-weight: 500;font-family: 'Caveat', cursive;">I'm <span class="my-name">Abhay <span id="optionalstuff">.</span></span></h1>
   <h3 style="font-size: 2rem;margin-top: 20px;margin-bottom: 10px;"> A full stack web developer who</h3>
   <h3 id="change" style="font-size: 2.2rem;margin-bottom: 30px;">Enjoys working as much as playing</h3>
-  
   <div id="myProgress">
   <div id="myBar"></div>
-  <img style="width: 100%;height: 300px;margin-top: 20px;" src="http://seanhalpin.io/assets/img/content/home/masthead/land.svg">
+  </div>
 </div>
+	<img src="/styles/script/cld.PNG" id="optionalstuff" style="width: 20rem;max-height: 8rem;float: left;position: absolute;">
+  <img style="width: 100%;margin-top: 2rem;" src="http://seanhalpin.io/assets/img/content/home/masthead/land.svg">
+
+</div>
+
   <!-- <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span> -->
 </div>
+
 </div>
 
 
