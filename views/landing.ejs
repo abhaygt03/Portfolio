@@ -12,7 +12,14 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href="https://fonts.googleapis.com/css?family=Baloo+Tamma+2&display=swap" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="/styles/script/socialmedia.css">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+
 <style>
+  @font-face {
+    font-family: parafont;
+    src:url("/styles/font/adobe-garamond-pro/AGaramondPro-Regular.otf");
+}
 	@media (max-width:1200px) {
   img#optionalstuff {
     display: none;
@@ -24,6 +31,35 @@
     display: none;
   }
 }
+
+.subpara{
+  font-family: parafont;
+  font-weight: 300;
+  font-size: 1.5em;
+}
+.subheading {
+  text-align: left;
+}
+
+.para{
+  text-align: left;
+  max-width: 50rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .subheading {
+  text-align: center;
+}
+.para {
+  text-align: center;
+  max-width: 100%;
+}
+.contactbtn{
+  width: 80%;
+}
+}
+
+
 body {
 	color: white;
 	/*background-image:url("http://seanhalpin.io/assets/img/content/home/masthead/land.svg");*/
@@ -117,15 +153,15 @@ h1{
 <div class="main-text container">
 	<img src="/styles/script/cld.PNG" id="optionalstuff" style="margin:0;width: 20rem;max-height: 8rem;float: right;">
 	<div class="container" style="max-width: 80rem;">
-  <h1 style="font-size: 7.5rem;margin-bottom: 30px;font-weight: 500;font-family: 'Caveat', cursive;">I'm <span class="my-name">Abhay <span id="optionalstuff">.</span></span></h1>
+  <h1 style="font-size: 7.5rem;margin-bottom: 30px;margin-left:1rem;font-weight: 500;font-family: 'Caveat', cursive;">I'm <span class="my-name">Abhay <span id="optionalstuff">.</span></span></h1>
   <h3 style="font-size: 2rem;margin-top: 20px;margin-bottom: 10px;"> A full stack web developer who</h3>
   <h3 id="change" style="font-size: 2.2rem;margin-bottom: 30px;">Enjoys working as much as playing</h3>
   <div id="myProgress">
   <div id="myBar"></div>
   </div>
-</div>
+  </div>
 	<img src="/styles/script/cld.PNG" id="optionalstuff" style="width: 20rem;max-height: 8rem;float: left;position: absolute;">
-  <img style="width: 100%;margin-top: 2rem;" src="http://seanhalpin.io/assets/img/content/home/masthead/land.svg">
+  <img style="width: 100%;margin-top: 2rem;" src="/styles/script/land.svg">
 
 </div>
 
@@ -140,23 +176,23 @@ h1{
       <img src="https://i.imgur.com/4Wtfr8r.png" style="max-width: 14rem;
       max-height:14rem;border-radius: 100px;">
   <h3 style="font-size: 2em;margin-top: 20px;margin-bottom: 10px;color: #45b29a;padding-top: 20px;">Hi.</h3>
-  <h3 style="color:black; font-size: 1.5em;color:#545454">I'm a web designer / developer based in Punjab,<br> India. I have a passion for web design and love to<br> create for web and mobile devices.</h3>
+  <h3 style="color:black; font-size: 1.5em;color:#545454;line-height: 1.42857143;" class="subpara">I'm a web designer / developer based in Punjab,<br> India. I have a passion for web design and love to<br> create for web and mobile devices.</h3>
 		
 </div>
 
 <div class="container down">
-	<h1 style="margin-bottom:28px;color: #45beca;">What can i do?</h1>
+	<h1 style="margin-bottom:28px; color: #1e836c; font-weight: 500;font-size: 3.8em;font-family: 'Open Sans', sans-serif;font-weight: 600;">What can i do?</h1>
       <div class="container">
         <div class="row">
-          <h3 style="font-size: 2em;margin-bottom: 10px;color: #45b29a;">Design what you want.</h3>
-          <div class="col-sm-2"></div>
-          <div class="col-sm-1">
-                <img src="https://i.imgur.com/4Wtfr8r.png" style="max-width: 8rem;max-height:8rem;border-radius: 100px;">
-              </div>
+          
           <div class="col-sm-1"></div>
-          <div class="col-sm-5">
-            
-            <h3 style="color:#45beca;; font-size: 1.5em;color:#545454">My approach is to create a website that conveys<br> your message.I like to keep it simple and <br>easy to use.</h3>
+          <div class="col-sm-3">
+                <img src="https://elsonbaty.ca/assets/img/content/home/what-i-do/design-icon.png" style="max-width: 13rem;max-height:13rem;border-radius: 100px;">
+              </div>
+
+          <div class="col-sm-6" style="margin-left: 1rem;">
+            <h3 style="font-size: 2em;margin-bottom: 10px;color: #45b29a;font-family: 'Open Sans', sans-serif;font-weight: 600;" class="subheading">Design what you want</h3>
+            <h3 style="font-size: 1.5em;color:#545454;line-height: 1.42857143;" class="para subpara">My approach is to create apps and websites that conveys your message.I like to keep it simple and easy to use.</h3>
  
           </div>    
         </div>
@@ -167,15 +203,16 @@ h1{
 
 <div class="container down">
   <div style="display: inline-block;">
-  <h3 style="font-size: 2em;margin-bottom: 10px;color: #45b29a;padding-top: 20px;">How i do this?</h3>
   <div class="container">
     <div class="row">
-      <div class="col-sm-3"></div>
-      <div class="col-sm-5">
-         <h3 style="color:#45beca;; font-size: 1.5em;color:#545454;margin-bottom: 4rem;">I develop websites using the latest and the <br>most popular technologies keeping the client's<br> needs in mind.</h3>
+      <div class="col-sm-2"></div>
+      <div class="col-sm-6">
+  <h3 style="font-size: 2em;margin-bottom: 10px;color: #45b29a;padding-top: 20px;font-family: 'Open Sans', sans-serif;font-weight: 600;" class="subheading">How i do this?</h3>
+         <h3 style="color:#45beca;; font-size: 1.5em;color:#545454;margin-bottom: 4rem;line-height: 1.42857143;" class="para subpara">I develop apps and websites using the latest and the most popular technologies keeping the client's needs in mind.</h3>
       </div>
-          <div class="col-sm-1">
-                <img src="https://i.imgur.com/4Wtfr8r.png" style="max-width: 8rem;max-height:8rem;border-radius: 100px;">
+          <div class="col-sm-2">
+            <img src="https://elsonbaty.ca/assets/img/content/home/what-i-do/dev-icon.png" style="max-width: 13rem;max-height:13rem;border-radius: 100px;">
+
               </div>
           </div>
     </div>
@@ -187,11 +224,11 @@ h1{
 
 <div class="container down">
   <div style="display: inline-block;">
-  <h3 style="font-size: 2em;margin-bottom: 10px;color: #45b29a;padding-top: 20px;">Want some help?</h3>
-  <h3 style="color:#45beca;; font-size: 1.5em;color:#545454">If you have a project that you want to get started, <br> think you need my help with something or <br>just fancy saying hey, then get in touch.</h3>
-		<a href="/contact" class="btn btn-success" style="margin: 20px;">Contact Me!</a>
+  <h3 style="font-size: 2em;margin-bottom: 10px;color: #45b29a;padding-top: 20px;font-family: 'Open Sans', sans-serif;font-weight: 600;">Want some help?</h3>
+  <h3 style="color:#45beca;; font-size: 1.5em;color:#545454;line-height: 1.42857143;" class="subpara">If you have a project that you want to get started, <br> think you need my help with something or <br>just fancy saying hey, then get in touch.</h3>
 		</div>
 </div>
+<a href="/contact" class="btn contactbtn" style="margin: 20px;background-color: #63D4B9;color: white;padding:0.9rem 2.1rem 0.9rem 2.1rem;font-size: 1.3em;font-family: 'Raleway', sans-serif;font-weight: 600;">Contact Me!</a>
 
 <script>
 function openNav() {
