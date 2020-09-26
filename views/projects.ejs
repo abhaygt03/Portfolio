@@ -40,6 +40,9 @@ p{
 	border:1px solid #202024;
 	background-color: #3c3c44;
 	padding: 0.7rem;
+	font-family: parafont;
+	font-size: 0.9 rem;
+
 }
 .skillul{
     list-style: none;
@@ -47,8 +50,8 @@ p{
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
-  font-family: "Lato", sans-serif;
   transition: background-color .5s;
   background-color: #202024;
 }
@@ -58,8 +61,10 @@ body {
 }
 
 .sidenav {
-  /*font-family: 'Averia Serif Libre', cursive;*/
-    background-color: #45beca;
+	background: url("/styles/script/bubble.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+  background-color: black;		
   height: 100%;
   width: 0;
   position: fixed;
@@ -96,13 +101,14 @@ body {
 	    padding:0.3rem;
 	    background-color:black;
 	    color: #e6e6e6;
-	    font-size: 1em;
+	    font-size: 0.9em;
 	    border-radius:5px;
 	    transition: 0.2s ease-in;
     	animation-duration: 1.6s;
     	text-align: center;
     	border:2px solid #e6e6e6;
     	text-decoration: none;
+		font-family: parafont;
 }
 #main {
   transition: margin-left .5s;
@@ -113,7 +119,21 @@ body {
   /*font-family: 'Averia Serif Libre', cursive;*/
   
 }
+p{
+	font-family: parafont;
+}
 
+.card-text{
+	font-size: 0.8em;
+	margin-bottom: 15px;
+		   padding-bottom: 5px;
+		   display: block;/* or inline-block */
+			 text-overflow: ellipsis;
+			 word-wrap: break-word;
+			 overflow: hidden visible;
+			 max-height: 3rem;
+			 line-height: 1.6rem;
+}
 
 #myProgress {
   width: 100%;
@@ -131,6 +151,15 @@ body {
   .sidenav a {font-size: 18px;}
 }
 
+@font-face {
+    font-family: parafont;
+    src:url("/styles/font/ClashofClansFont/Supercell-magic-webfont.ttf");
+}
+
+.sidenav a{
+  font-family: parafont;
+}
+
 </style>
 </head>
 <body>
@@ -146,20 +175,6 @@ body {
 
 <div id="main" >
 
-<!-- 
-<nav class="navbar navbar-expand-lg navbar-light bg-light" style="display: flex;">
-  
-  <ul class="navbar-nav mr-auto">
-	<li class="nav-item active">
-    
-	</li>
-    <li class="nav-item active">
-    <a class="navbar-brand" href="#" style="font-size: 1.8vw;margin-left: 2vw;display: inline">My Portfolio</a>
-    </li>
-  </ul>
-</nav>
-
- -->
  <span style="font-size:30px;cursor:pointer;color: white" onclick="openNav()">&#9777;<i class="far fa-arrow-alt-circle-right"></i></span>
 <!-- <a href="#" style="padding-top:6px;padding-bottom:6px; color: white;" onclick="openNav()"><span  class="navbar-toggler-icon click" style="font-size: 2vw;"></span></a> -->
 
@@ -169,13 +184,14 @@ body {
     margin-top: -85px;
     font-weight: normal;
     text-align: center;padding: 0;
+	font-family: parafont;
     box-sizing: border-box;display: block;color: #e6e6e6;">Projects</h1>
 <div class="container">
 
 	<div class="row">
 
 		<div class="col-sm" class="projectcards" style="margin-bottom:3rem;">
-			<div class="card" style="width: 300px;display: inline-block;border:2px solid grey;background-color:#202024;
+			<div class="card" style="width: 320px;display: inline-block;border:2px solid grey;background-color:#202024;
 			box-sizing: border-box;border-radius: 10px;">
 			 <img class="card-img-top" src="/styles/script/vulpix.jpg" style="border-top-left-radius: 10px;border-top-right-radius: 10px;height: 20rem;width: 100%" alt="Card image cap">
 			 <div class="card-body" style="padding:6px;">
@@ -189,18 +205,9 @@ body {
    
 		   <a href="#" class="btn appl" style="color: grey;">View Live Version</a>
    
-		   <a href="https://github.com/abhaygt03/Vulpix" class="btn appl">View On Github</a>
+		   <a href="https://github.com/abhaygt03/Vulpix" class="btn appl" >View On Github</a>
    </div>
-		   <p class="card-text" style="
-			margin-bottom: 10px;
-		   padding-bottom: 5px;
-		   font-size: 1.1rem;
-		   display: block;/* or inline-block */
-			 text-overflow: ellipsis;
-			 word-wrap: break-word;
-			 overflow: hidden visible;
-			 max-height: 3rem;
-			 line-height: 1.6rem;">Vulpix is an android and iOS supported app for video-calling chatting and media sharing purposes. </p>
+		   <p class="card-text">Vulpix is an android and iOS supported app for video-calling chatting and media sharing purposes. </p>
    
 				 <p style="margin-bottom: 0.5rem;">Skills Used:</p>
    
@@ -215,8 +222,8 @@ body {
 	   </div>
    
 
-<div class="col-sm" class="projectcards" style="margin-bottom:3rem;">
-	 	<div class="card" style="width: 300px;display: inline-block;border:2px solid grey;background-color:#202024;
+	<div class="col-sm" class="projectcards" style="margin-bottom:3rem;">
+	 	<div class="card" style="width: 320px;display: inline-block;border:2px solid grey;background-color:#202024;
 	 	box-sizing: border-box;border-radius: 10px;">
 	  	<img class="card-img-top" src="/styles/script/yelpcamp.PNG" style="border-top-left-radius: 10px;border-top-right-radius: 10px;height: 18rem;width: 100%" alt="Card image cap">
 	  	<div class="card-body" style="padding:6px;">
@@ -233,16 +240,7 @@ body {
 
 	    <a href="https://github.com/abhaygt03/YelpCamp" class="btn appl">View On Github</a>
 </div>
-	    <p class="card-text" style="
-	     margin-bottom: 10px;
-	    padding-bottom: 5px;
-	    font-size: 1.1rem;
-	    display: block;/* or inline-block */
-	  	text-overflow: ellipsis;
-	  	word-wrap: break-word;
-	  	overflow: hidden visible;
-	  	max-height: 3rem;
-	  	line-height: 1.6rem;">YelpCamp is a web app for revieweing various famous camping spots. People can also post their camping experience by putting comments comments.</p>
+	    <p class="card-text">YelpCamp is a web app for revieweing various famous camping spots. People can also post their camping experience by putting comments comments.</p>
 
 	  		<p style="margin-bottom: 0.5rem;">Skills Used:</p>
 
@@ -259,7 +257,7 @@ body {
 
 
     <div class="col-sm" class="projectcards" style="margin-bottom:3rem;">
-	 	<div class="card" style="border-radius: 10px;width: 300px;display: inline-block;border:2px solid grey;background-color:#202024;
+	 	<div class="card" style="border-radius: 10px;width: 320px;display: inline-block;border:2px solid grey;background-color:#202024;
 	 	box-sizing: border-box;">
   		<img class="card-img-top" src="/styles/script/pixus.PNG" style="border-top-left-radius: 10px;border-top-right-radius: 10px;height: 18rem;width: 100%" alt="Card image cap">
 	  	<div class="card-body" style="padding:6px;">
@@ -276,16 +274,7 @@ body {
 
 	    <a href="https://github.com/abhaygt03/Pixus" class="btn appl">View On Github</a>
 </div>
-	    <p class="card-text" style="
-	    margin-bottom: 10px;
-	    padding-bottom: 5px;
-	    font-size: 1.1rem;
-	    display: block;/* or inline-block */
-	  	text-overflow: ellipsis;
-	  	word-wrap: break-word;
-	  	overflow: hidden visible;
-	  	max-height: 3rem;
-	  	line-height: 1.6rem;">A photo sharing social networking service. It was launched in February 2020. For now it is PC compatible, but soon the phone supportive verison will be released.</p>
+	    <p class="card-text" >A photo sharing social networking service. It was launched in February 2020. For now it is PC compatible, but soon the phone supportive verison will be released.</p>
 
 	  	<p style="margin-bottom: 0.5rem;">Skills Used:</p>
 
@@ -300,7 +289,7 @@ body {
     </div>
 
 	<div class="col-sm" class="projectcards" style="margin-bottom:3rem;">
-		<div class="card" style="width: 300px;display: inline-block;border:2px solid grey;background-color:#202024;
+		<div class="card" style="width: 320px;display: inline-block;border:2px solid grey;background-color:#202024;
 		box-sizing: border-box;border-radius: 10px;">
 		 <img class="card-img-top" src="/styles//script/toystory.png" style="border-top-left-radius: 10px;border-top-right-radius: 10px;height: 18rem;width: 100%" alt="Card image cap">
 		 <div class="card-body" style="padding:6px;">
@@ -317,16 +306,7 @@ body {
 
 	   <a href="https://github.com/abhaygt03/Movie-Search" class="btn appl">View On Github</a>
 </div>
-	   <p class="card-text" style="
-	   margin-bottom: 10px;
-	   padding-bottom: 5px;
-	   font-size: 1.1rem;
-	   display: block;/* or inline-block */
-		 text-overflow: ellipsis;
-		 word-wrap: break-word;
-		 overflow: hidden visible;
-		 max-height: 3rem;
-		 line-height: 1.6rem;">Site that allows the users to search movies on IMDb</p>
+	   <p class="card-text" >Site that allows the users to search movies on IMDb</p>
 
 			 <p style="margin-bottom: 0.5rem;">Skills Used:</p>
 
@@ -342,7 +322,7 @@ body {
 
 
 <div class="col-sm" class="projectcards" style="margin-bottom:3rem;">
-	 	<div class="card" style="width: 300px;display: inline-block;border:2px solid grey;background-color:#202024;
+	 	<div class="card" style="width: 320px;display: inline-block;border:2px solid grey;background-color:#202024;
 	 	box-sizing: border-box;border-radius: 10px;">
 	  	<img class="card-img-top" src="/styles/script/FNnnQQi.png" style="border-top-left-radius: 10px;border-top-right-radius: 10px;height: 18rem;width: 100%" alt="Card image cap">
 	  	<div class="card-body" style="padding:6px;">
@@ -359,16 +339,7 @@ body {
 
 	    <a href="https://github.com/abhaygt03/Corona-updates" class="btn appl">View On Github</a>
 </div>
-	    <p class="card-text" style="
-	    margin-bottom: 10px;
-	    padding-bottom: 5px;
-	    font-size: 1.1rem;
-	    display: block;/* or inline-block */
-	  	text-overflow: ellipsis;
-	  	word-wrap: break-word;
-	  	overflow: hidden visible;
-	  	max-height: 3rem;
-	  	line-height: 1.6rem;;">A site to check the details and figures regarding the corona virus spread around the world. It gives live figures for all the countries all around the world </p>
+	    <p class="card-text">A site to check the details and figures regarding the corona virus spread around the world. It gives live figures for all the countries all around the world </p>
 
 	  		<p style="margin-bottom: 0.5rem;">Skills Used:</p>
 
